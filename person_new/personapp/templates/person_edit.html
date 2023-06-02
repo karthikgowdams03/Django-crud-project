@@ -1,0 +1,35 @@
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><!---->Person App - Create Person<!----></title>
+  </head>
+  <body>
+    <div>
+      <div style="background-color:orange; height: 50px; text-align:center; ">
+        <h2>OUR APPS</h2>
+      </div>
+      <h3><!---->Person App - Create Person<!----></h3>
+      <div>
+      <!---->
+<form method="POST">			
+  {% csrf_token %}
+	{% for field in personForm %}			
+		<div>
+			{{ field.label_tag }}
+			{% render_field field  %}
+		</div>
+	{% endfor %}
+		<div>
+			<input type="submit" value="Create Person"/>
+		</div>
+</form>	
+			<!---->
+      </div>
+      <div style="background-color:silver; height: 30px; text-align:center; ">
+            <p>(c) Person App Foundation</p>
+        </div>
+    </div>
+  </body>
+</html>				
