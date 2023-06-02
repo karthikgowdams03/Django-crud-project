@@ -1,6 +1,8 @@
 ## Django project to perform CRUD operations.
 
-### create virtual environment using `virtualenv`
+#### create virtual environment using `virtualenv name`
+
+#### activate virtual environment using `name/scripts/activate`
 
 In the project directory, you can run:
 
