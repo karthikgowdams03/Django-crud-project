@@ -4,6 +4,8 @@
 
 #### activate virtual environment using `name/scripts/activate`
 
+#### install django and django-widget-tweaks in the virtual environment
+
 In the project directory, you can run:
 
 ### `cd person_new`
